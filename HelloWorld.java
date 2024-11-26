@@ -21,7 +21,7 @@ public class HelloWorld {
                 OutputStream responseBody = exchange.getResponseBody();
                 
                 // Write the HTML content to the response body
-                String htmlResponse = "<html><body><h1>Hello, World!</h1></body></html>";
+                String htmlResponse = "<html><body><h1>Hello, World for skivori!</h1></body></html>";
                 responseBody.write(htmlResponse.getBytes());
                 
                 // Close the response body stream
