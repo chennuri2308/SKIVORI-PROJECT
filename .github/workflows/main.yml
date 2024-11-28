@@ -1,9 +1,11 @@
 name: CI/CD pipeline
 
-on:
-  push:
-    branches:
-      - main
+on: workflow_dispatch
+env:
+  AWS_REGION: eu-central-1
+  ECR_REPOSITORY: raju/rajurepo
+  EKS_CLUSTER: raju-eks
+  
 
 jobs:
   build_and_push:
