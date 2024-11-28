@@ -4,11 +4,11 @@ on:
   push:
     branches:
       -main
-      
+
 env:
   AWS_REGION: eu-central-1
   ECR_REPOSITORY: raju/rajurepo
-  EKS_CLUSTER: raju-eks
+  EKS_CLUSTER: raju-eks-i
   
 
 jobs:
