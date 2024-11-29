@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: helloworld-app-container
-          image: <>/helloworld-app:20 # Updated image name
+          image: {{ .values.appimage}}:  {{ .Values.apptag}} # replaces with variables in the script
           ports:
             - containerPort: 8001 # Port your application listens to
           resources:

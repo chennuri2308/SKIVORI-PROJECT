@@ -61,8 +61,8 @@ jobs:
 #          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_key }}
 #          aws-region: ${{ env.AWS_REGION }}
 #          cluster-name: ${{ env.EKS_CLUSTER }}
-#          chart-path: helm/ #replace with your chart names
+#          chart-path: helm/helloworldcharts
 #          namesspace: default
 #          values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPOSITORY }}, apptag=${{ github.run_number }}
-#          name: <---app>
+#          name: helloworld-stack
 
