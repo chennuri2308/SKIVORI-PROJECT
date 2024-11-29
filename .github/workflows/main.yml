@@ -1,6 +1,9 @@
 name: SKIVORI CI/CD pipeline
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      -main
 
 env:  #Declaring environment variables here itself because not to hardcode the script.#
   AWS_REGION: eu-central-1
